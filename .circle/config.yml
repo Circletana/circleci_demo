@@ -14,5 +14,5 @@ jobs: # a collection of steps
     steps: # a collection of executable commands
       # Which version of bundler?
       - run:
-          name: Which bundler?
-          command: bundle -v
+        name: Which bundler?
+        command: bundle -v
