@@ -5,6 +5,6 @@ RSpec.feature "Contact", :type => :feature do
   scenario "Create a new contact" do
     visit "/"
 
-    expect(page).to have_text("Helloo")
+    expect(page).to have_text("Hello")
   end
 end
