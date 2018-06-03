@@ -9,6 +9,10 @@ jobs:
     steps:
       - checkout
       - run:
+        - name: 'Initial setup'
+        - command:
+          - mv config/database_ci.yml config/database.yml
+      - run:
         - name: 'Database setup'
         - command:
           - bundle exec rake db:schema:load RAILS_ENV=test
